@@ -7,14 +7,14 @@
  * @param {array} arr - An array of integers
  */
 function leadZeroes(arr) {
-    // Code here
+
 }
 
 /**
  * Setter
  * @description: Returns an array of unique numbers.
  *      Ex: setter([1,1,2,2,3,3]) => [1,2,3]
- *      
+ *
  * @param {array} arr - An array of data
  */
 function setter(arr) {
@@ -25,6 +25,10 @@ function setter(arr) {
  * Is Prime
  * @description: Return true if the given number is a prime number, false otherwise
  *      Ex: isPrime(3) => true
+ *
+ * Resources:
+ * https://en.wikipedia.org/wiki/Prime_number
+ * https://youtu.be/mIStB5X4U8M
  * @param num
  */
 function isPrime(num) {
@@ -39,21 +43,7 @@ function isPrime(num) {
  * @param dividend
  * @param divisor
  */
-function modulus(dividend, divisor) {
-
-}
-
-/**
- * Only Once
- * @description: Write a function that takes a function and sets it
- * so that it can only be called once. If it's called again it,
- * it should return 'undefined' (a string with 'undefined' in it)
- *      Ex: onlyOnce(someFunction) => 'someFunctions return value'
- *          someFunction() => 'undefined'
- *
- * @param {function} fn: A function
- */
-function onlyOnce(fn) {
+function modulo(dividend, divisor) {
 
 }
 
@@ -86,8 +76,7 @@ module.exports = {
     leadZeroes: leadZeroes,
     setter: setter,
     isPrime: isPrime,
-    modulus: modulus,
-    onlyOnce: onlyOnce,
+    modulo: modulo,
     nextFive: nextFive,
     osort: osort
 };
