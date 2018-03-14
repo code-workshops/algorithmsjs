@@ -1,11 +1,22 @@
 # White Boarding Advice
 
+*Instructions*
+
+After cloning:
+```
+npm install
+npm test
+```
+
+...then make the tests pass
+
 Resources:
 * [Algorithm Deck](https://drive.google.com/open?id=1raZx8K8cWmQkwmjxJ3qZ-GG6zEAawtsmtGgxnd-DXfU)
 * Public Link: https://github.com/code-workshops/algorithmsjs
 
 Try to practice one algorithm a day. If you don't come up with a solution by the end of the day, _look up the solution and study it_!
 Don't stay stuck on a problem for too long. You'll benefit more from studying the solution and trying again afterwards.
+
 
 *Summary*
 
