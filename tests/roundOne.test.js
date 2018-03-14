@@ -1,10 +1,12 @@
 var r1 = require('../roundOne');
 
-test('moves all zeroes in an array to the beginning', function() {
-    var expected = [1, 2, 0, 0];
-    var actual = r1.leadZeroes(expected);
-    expect(expected).toBe(actual);
-    expect(r1.leadZeroes(expected)).toEqual(actual)
+describe('leadZeroes()', function() {
+    test('moves all zeroes in an array to the beginning', function() {
+        var expected = [1, 2, 0, 0];
+        var actual = r1.leadZeroes(expected);
+        expect(expected).toBe(actual);
+        expect(r1.leadZeroes(expected)).toEqual(actual)
+    });
 });
 
 describe('setter()', function() {
@@ -59,10 +61,14 @@ describe('nextFive()', function() {
     })
 });
 
+describe('osort()', function() {
+    test('sorts an object alphabetically 1', function() {
+        expect(r1.osort({z: 3, a: 1})).toEqual({a: 1, z: 3});
+    });
+    test('sorts object alphabetically 2', function() {
+        expect(r1.osort({marketing: true, email: false, phone: false})).toEqual({email: false, marketing: true, phone: false})
+    })
+})
 
 
-test('sorts an object alphabetically', function() {
-    expect(r1.osort({z: 3, a: 1})).toEqual({a: 1, z: 3});
-    expect(r1.osort({marketing: true, email: false, phone: false})).toEqual({email: false, marketing: true, phone: false})
-});
 
