@@ -58,7 +58,7 @@ describe('nextFive()', function() {
     });
     test('returns next 5 after 0', function() {
         expect(r1.nextFive(0)).toEqual(5);
-    })
+    });
 });
 
 describe('osort()', function() {
@@ -67,8 +67,6 @@ describe('osort()', function() {
     });
     test('sorts object alphabetically 2', function() {
         expect(r1.osort({marketing: true, email: false, phone: false})).toEqual({email: false, marketing: true, phone: false})
-    })
-})
-
-
+    });
+});
 

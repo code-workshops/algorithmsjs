@@ -7,7 +7,23 @@
  * @param {array} arr - An array of integers
  */
 function leadZeroes(arr) {
-
+    // First trial
+    // Where are all the zeroes? Lets find them and place them here
+    var indices = [];
+    arr.forEach(function(item, idx, arr) {
+        if (item == 0) {
+            indices.push(idx)
+        }
+    });
+    // Now that we have them, lets remove them.
+    // For each 0 we remove, add a 0 to the front
+    for (var i = 0; i < indices.length; i++) {
+        arr.splice(indices[i], 1);
+        arr.unshift(0);
+    }
+    // Return the same array
+    return arr
+    // Can you do this in a different way?
 }
 
 /**
@@ -18,7 +34,18 @@ function leadZeroes(arr) {
  * @param {array} arr - An array of data
  */
 function setter(arr) {
-
+    // Gather all the unique items here.
+    var newArr = [];
+    // Iterate over the original array to search it
+    arr.forEach(function(item, idx, arr) {
+        if (!newArr.includes(item)) {
+            newArr.push(item)
+        }
+        // Only items NOT in newArr need to be added.
+    });
+    // Return our unique list!
+    return newArr;
+    // Can you do this differently?
 }
 
 /**
@@ -32,7 +59,25 @@ function setter(arr) {
  * @param num
  */
 function isPrime(num) {
+    if (num === 2 || num === 3) { return true }
+    // A prime number is the product of itself and 1.
+    // Suppose 10 x 10 = 100. So is 2 x 50.
+    // Note that in both cases either the multiples are equal
+    // or one is greater than the other, to equal 100 together.
+    // If our number is prime, its multiples will be 1 and itself.
+    // That's why we only have to check the numbers less than
+    // the square root of num instead of every number from 1 to num
+    var sqrt = Math.floor(Math.sqrt(num)) + 1;
+    var is = true;
 
+    // Start with 2 since num % 1 is num
+    for(var i=2; i < sqrt; i++) {
+        if(num % i === 0) {
+            is = false;
+            break
+        }
+    }
+    return is;
 }
 
 /**
@@ -44,7 +89,8 @@ function isPrime(num) {
  * @param divisor
  */
 function modulo(dividend, divisor) {
-
+    var quotient = parseInt(dividend/divisor);
+    return dividend - (quotient * divisor)
 }
 
 /**
@@ -57,7 +103,8 @@ function modulo(dividend, divisor) {
  * @param num
  */
 function nextFive(num) {
-
+    var remainder = num % 5;
+    return num + (5 - remainder)
 }
 
 /**
@@ -69,7 +116,16 @@ function nextFive(num) {
  * @param obj
  */
 function osort(obj) {
-
+    // First lets only worry about the keys. Then sort them.
+    var keys = Object.keys(obj).sort();
+    // Create a new object for the sorted data.
+    var sorted = {};
+    // Iterate through the keys and set their values
+    keys.forEach(function(k, idx, arr) {
+        sorted[k] = obj[k];
+    });
+    return sorted
+    // Can you think of a different way to approach this?
 }
 
 module.exports = {
