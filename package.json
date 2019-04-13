@@ -1,12 +1,12 @@
 {
-  "name": "algorithms",
-  "version": "1.0.0",
-  "description": "Practicing algorithms!",
+  "name": "algorithmsjs",
+  "version": "1.1.0",
+  "description": "Practice javascript skills through TDD.",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "author": "",
+  "author": "K Hudson",
   "license": "ISC",
   "dependencies": {
     "npm": "^5.7.1"
