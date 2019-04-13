@@ -1,4 +1,4 @@
-# White Boarding Advice
+# Algorithms.js
 
 *Instructions*
 
@@ -8,7 +8,39 @@ npm install
 npm test
 ```
 
-...then make the tests pass
+...then make the tests pass.
+
+Once you've completed the basic tests which help you practice writing code, move on to the stories below where you will practice writing your own tests.
+
+## Exercises
+
+Use TDD to implement the functions and methods below. The features can help you form tests before you begin coding.
+
+Implement `Array.prototype.mapper()` which functions the same as `Array.prototype.map()`. 
+
+* mapper takes a callback
+* mapper is an Array method
+* applies the callback to the array
+* returns the expected result of the callback
+
+Implement `Array.prototype.filterer()` which functions the same as `Array.prototype.filter()`.
+
+* filterer takes a callback
+* filterer is an Array method
+* filters the array with the callback
+* returns the expected result of the callback
+
+Implement a `range(start, stop, step)` function which creates a new array. It has 1 mandatory argument: the length of the resulting array. It can take up to 3 arguments though: starting and stopping point OR starting and stopping point and steps (increments).
+
+```
+// Example usage:
+range(10)       //-> [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+range(1, 10)    //-> [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+range(1, 10, 2) //-> [ 1, 3, 5, 7, 9 ]
+``` 
+
+* the step argument works with all integers (positive and negative)
+* the stop and start arguments must be positive integers only
 
 Resources:
 * [Algorithm Deck](https://drive.google.com/open?id=1raZx8K8cWmQkwmjxJ3qZ-GG6zEAawtsmtGgxnd-DXfU)
