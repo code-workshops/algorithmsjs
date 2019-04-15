@@ -2,8 +2,9 @@ var r1 = require('../roundOne');
 
 describe('leadZeroes()', function() {
     test('moves all zeroes in an array to the beginning', function() {
-        var expected = [1, 2, 0, 0];
-        var actual = r1.leadZeroes(expected);
+        var data = [1, 2, 0, 0];
+        var expected = [0, 0, 1, 2];
+        var actual = r1.leadZeroes(data);
         expect(expected).toBe(actual);
         expect(r1.leadZeroes(expected)).toEqual(actual)
     });
