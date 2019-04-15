@@ -30,18 +30,6 @@ Implement `Array.prototype.filterer()` which functions the same as `Array.protot
 * filters the array with the callback
 * returns the expected result of the callback
 
-Implement a `range(start, stop, step)` function which creates a new array. It has 1 mandatory argument: the length of the resulting array. It can take up to 3 arguments though: starting and stopping point OR starting and stopping point and steps (increments).
-
-```
-// Example usage:
-range(10)       //-> [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
-range(1, 10)    //-> [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
-range(1, 10, 2) //-> [ 1, 3, 5, 7, 9 ]
-``` 
-
-* the step argument works with all integers (positive and negative)
-* the stop and start arguments must be positive integers only
-
 Resources:
 * [Algorithm Deck](https://drive.google.com/open?id=1raZx8K8cWmQkwmjxJ3qZ-GG6zEAawtsmtGgxnd-DXfU)
 * Public Link: https://github.com/code-workshops/algorithmsjs
